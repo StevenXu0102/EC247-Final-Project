@@ -221,11 +221,11 @@ class TDSConvCTCModule(pl.LightningModule):
             # ),
 
             # Using GRU encoder
-            # TDSGRUEncoder(
-            #     num_features=num_features,
-            #     rnn_hidden_size=128,
-            #     num_rnn_layers=5
-            # ),
+            TDSGRUEncoder(
+                num_features=num_features,
+                rnn_hidden_size=256,
+                num_rnn_layers=5
+            ),
 
             ##TransformerLSTMCNN
             # TransformerLSTMCNN(
@@ -237,11 +237,11 @@ class TDSConvCTCModule(pl.LightningModule):
             #     lstm_num_layers=5,
             #     cnn_channels=64 
             # ),
-            LSTMCNN(
-                num_features=num_features,
-                lstm_hidden_size=256,
-                cnn_channels=128
-                ),
+            # LSTMCNN(
+            #     num_features=num_features,
+            #     lstm_hidden_size=256,
+            #     cnn_channels=128
+            #     ),
 
 
             
