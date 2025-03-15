@@ -16,18 +16,18 @@ temporal_jitter:
 logspec:
   _target_: emg2qwerty.transforms.LogSpectrogram
   n_fft: 64
-  hop_length: 48  # Downsamples from 2kHz to 125Hz
+  hop_length: 44  # Downsamples from 2kHz to 125Hz
 
 fft_logspec:
   _target_: emg2qwerty.transforms.FFTLogSpectrogram
   n_fft: 64
-  hop_length: 48  # Downsamples from 2kHz to 125Hz
+  hop_length: 44  # Downsamples from 2kHz to 125Hz
 
 waveletspec:
   _target_: emg2qwerty.transforms.LogWaveletSpectrogram
   wavelet: morl
   scales: 33
-  hop_length: 48
+  hop_length: 44
 
 specaug:
   _target_: emg2qwerty.transforms.SpecAugment
